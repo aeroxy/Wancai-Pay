@@ -1,5 +1,5 @@
-angular.module('YMWC',['ngMaterial', 'ngMessages'])
-.controller('BannerController', function($scope) {
+var app = angular.module('YMWC',['ngMaterial', 'ngMessages']);
+app.controller('BannerController', function($scope) {
   //$scope.title = '翼码旺财';
 });
 

@@ -25,22 +25,23 @@
       <md-toolbar ng-controller="BannerController">
         <div class="md-toolbar-tools">
           <div id="logo"></div>
-          <md-button>首页</md-button>
-          <md-button>多乐互动</md-button>
-          <md-button>卡券商城</md-button>
-          <md-button>帮助中心</md-button>
-          <md-button>关于翼码</md-button>
-          <md-button>活动中心</md-button>
-          <md-button>诚招代理商</md-button>
-          <div id="login" layour="row">
-            <md-button>商户登陆</md-button>|<md-button>代理商登陆</md-button>
-            <md-button id="register">注册</md-button>
+          <md-button ng-href="http://www.wangcaio2o.com/">首页</md-button>
+          <md-button ng-href="http://cp.wangcaio2o.com/dlhd.html?id=58468">多乐互动</md-button>
+          <md-button ng-href="http://www.wangcaio2o.com/index.php?g=Hall&m=Index&a=index">卡券商城</md-button>
+          <md-button ng-href="http://www.wangcaio2o.com/index.php?g=Home&m=Help&a=helpConter">帮助中心</md-button>
+          <md-button ng-href="http://www.wangcaio2o.com/index.php?m=Contactus&a=gyym">关于翼码</md-button>
+          <md-button ng-href="http://www.wangcaio2o.com/index.php?g=Home&m=Active&a=index">活动中心</md-button>
+          <md-button ng-href="http://cp.wangcaio2o.com/dmsdAgent.html">诚招代理商</md-button>
+          <div flex></div>
+          <div id="login" layout="row" layout-align="end center">
+            <md-button ng-href="http://www.wangcaio2o.com/index.php?g=Home&m=Login&a=showLogin">商户登陆</md-button>|<md-button ng-href="http://t-daili.wangcaio2o.com/">代理商登陆</md-button>
+            <md-button id="register" ng-href="http://www.wangcaio2o.com/index.php?g=Home&m=Reg&a=index">注册</md-button>
           </div>
         </div>
         <div id="intro">
           <h1>旺财付——便捷支付</h1>
           <p>旺财付是一款集轻服务、0门槛、强需求、的异业交叉营销收款功能产品，<br>满足您时时监控、分分收款的便利。</p>
-          <md-button class="md-raised">立即开通</md-button>
+          <md-button class="md-raised" ng-href="http://www.wangcaio2o.com/">立即开通</md-button>
         </div>
       </md-toolbar>
       <md-content id="fold1">
@@ -89,29 +90,56 @@
         <h1><span>为您推荐</span></h1>
         <h2>Recommended for you</h2>
         <div id="panel4" layout="row">
-          <md-card flex="25">
+          <md-button flex="25" ng-href="http://mall.wangcaio2o.com" target="_blank">
             <figure id="dot1"></figure>
             <h1>卡券商城</h1>
             <p>海量卡券资源 轻松异页引流</p>
-          </md-card>
-          <md-card flex="25">
+          </md-button>
+          <md-button flex="25" ng-href="http://cp.wangcaio2o.com/dlhd.html">
             <figure id="dot2"></figure>
             <h1>多乐互动</h1>
             <p>便捷移动营销专家</p>
-          </md-card>
-          <md-card flex="25">
+          </md-button>
+          <md-button flex="25" ng-href="http://cp.wangcaio2o.com/kqyx.html">
             <figure id="dot3"></figure>
             <h1>翼码卡券</h1>
             <p>卡券营销整体解决专家</p>
-          </md-card>
-          <md-card flex="25">
+          </md-button>
+          <md-button flex="25" ng-href="http://cp.wangcaio2o.com/wcxd.html">
             <figure id="dot4"></figure>
             <h1>多宝电商</h1>
             <p>商户的移动电商工具</p>
-          </md-card>
+          </md-button>
         </div>
       </md-content>
-      <footer></footer>
+      <!-- <footer></footer> -->
+      <md-content id="footer-new">
+        <div layout="row" flex>
+          <div flex="33">
+            <img src="http://static.wangcaio2o.com/Home/Public/Image/page/icon-1.png" />
+            <p>400-882-7770</p>
+            <p>8:00-22:00</p>
+          </div>
+          <div flex="33">
+            <a href="http://weibo.com/imageco" target="_blank"><img src="http://static.wangcaio2o.com/Home/Public/Image/page/icon-2.png" /></a><br>
+            <a href="http://weibo.com/imageco" target="_blank">@翼码科技</a><br>
+            <a href="http://weibo.com/imageco" target="_blank">http://weibo.com/imageco</a>
+          </div>
+          <div flex="33">
+            <img src="http://static.wangcaio2o.com/Home/Public/Image/page/icon-3.png" />
+            <!-- <img src="http://static.wangcaio2o.com/Home/Public/Image/page/qr.png" class="wangcaio2o-qr" /> -->
+            <p>公众号：翼码旺财</p>
+            <p>wangcaio2o</p>
+          </div>
+        </div>
+        <p id="flink"><a href="index.php?m=Contactus&amp;a=index" target="_blank">翼码简介</a>| <a href="index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=1" target="_blank">最新动态</a>| <a href="index.php?g=Home&amp;m=Contactus&amp;a=info&amp;class_id=6" target="_blank">荣誉资质</a>| <a href="index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=2" target="_blank">媒体报道 </a>| <a href="index.php?g=Home&amp;m=Help&amp;a=helpConter" target="_blank">帮助中心</a>| <a href="index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=3" target="_blank">经典案例 </a>| <a href="index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=7" target="_blank">翼码人</a></p>
+        <div class="footer-copyright">
+          <p>&copy;2017&nbsp;&nbsp;翼码旺财&nbsp;&nbsp;版权所有&nbsp;&nbsp;沪ICP备08024760号-14</p>
+        </div>
+        <div class="honesty_logo">
+          <a href="https://credit.szfw.org/CX20160804028313290159.html" target="_blank"><img src="http://static.wangcaio2o.com/Home/Public/Image/page/honesty.png" class="wangcaio2o-honesty" /></a>
+        </div>
+      </md-content>
     </div>
   </body>
 </html>
