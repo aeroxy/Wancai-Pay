@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" ng-app="YMWC" class="no-js loading">
+  <head>
+    <title>翼码旺财 | 股票代码：833614</title>
+    <meta lang="en-US" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aero Wang">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="css/angular-material.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/angular-messages.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body oncontextmenu="return false">
+    <div id="loading">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+    </div>
+    <div id="app">
+      <md-toolbar ng-controller="BannerController">
+        <div class="md-toolbar-tools">
+          <div id="logo"></div>
+          <md-button>首页</md-button>
+          <md-button>多乐互动</md-button>
+          <md-button>卡券商城</md-button>
+          <md-button>帮助中心</md-button>
+          <md-button>关于翼码</md-button>
+          <md-button>活动中心</md-button>
+          <md-button>诚招代理商</md-button>
+          <div id="login" layour="row">
+            <md-button>商户登陆</md-button>|<md-button>代理商登陆</md-button>
+            <md-button id="register">注册</md-button>
+          </div>
+        </div>
+        <div id="intro">
+          <h1>旺财付——便捷支付</h1>
+          <p>旺财付是一款集轻服务、0门槛、强需求、的异业交叉营销收款功能产品，<br>满足您时时监控、分分收款的便利。</p>
+          <md-button class="md-raised">立即开通</md-button>
+        </div>
+      </md-toolbar>
+      <md-content id="fold1">
+        <h1><span>旺财付</span>全心为您</h1>
+        <h2>Wholeheartedly for you</h2>
+        <div id="panel1" layout="row">
+          <md-card flex="33">
+            <figure id="icon1"></figure>
+            <h1>创建便捷</h1>
+            <p>仅需1分钟完成所有配置。只需提供一个收款账户，排除多账户的繁琐</p>
+          </md-card>
+          <md-card flex="33">
+            <figure id="icon2"></figure>
+            <h1>活动多样</h1>
+            <p>结合自身营销活动规则，随心配置活动，卡券核销更方便。</p>
+          </md-card>
+          <md-card flex="33">
+            <figure id="icon3"></figure>
+            <h1>营销结合</h1>
+            <p>享受“营销+支付”的一站式便捷服务</p>
+          </md-card>
+        </div>
+        <div id="panel2" layout="row">
+          <figure flex="33" id="pic1"></figure>
+          <figure flex="33" id="pic2"></figure>
+          <figure flex="33" id="pic3"></figure>
+        </div>
+      </md-content>
+      <md-content id="fold2">
+        <h1><span>简单便捷的</span>支付流程</h1>
+        <h2>Simple and convenient payment process</h2>
+        <div id="panel3" layout="row">
+          <figure flex="25" id="iphone1" class="phone"></figure>
+          <div flex="12" class="process"></div>
+          <figure flex="25" id="iphone2" class="phone"></figure>
+          <div flex="12" class="process"></div>
+          <figure flex="25" id="iphone3" class="phone"></figure>
+        </div>
+      </md-content>
+      <md-content id="fold3">
+        <h1><span>适合线下门店商家</span>日常使用</h1>
+        <h2>满足多行业、多样式的收银需求</h2>
+        <figure flex="100" id="lazy"></figure>
+      </md-content>
+      <md-content id="fold4">
+        <h1><span>为您推荐</span></h1>
+        <h2>Recommended for you</h2>
+        <div id="panel4" layout="row">
+          <md-card flex="25">
+            <figure id="dot1"></figure>
+            <h1>卡券商城</h1>
+            <p>海量卡券资源 轻松异页引流</p>
+          </md-card>
+          <md-card flex="25">
+            <figure id="dot2"></figure>
+            <h1>多乐互动</h1>
+            <p>便捷移动营销专家</p>
+          </md-card>
+          <md-card flex="25">
+            <figure id="dot3"></figure>
+            <h1>翼码卡券</h1>
+            <p>卡券营销整体解决专家</p>
+          </md-card>
+          <md-card flex="25">
+            <figure id="dot4"></figure>
+            <h1>多宝电商</h1>
+            <p>商户的移动电商工具</p>
+          </md-card>
+        </div>
+      </md-content>
+      <footer></footer>
+    </div>
+  </body>
+</html>
