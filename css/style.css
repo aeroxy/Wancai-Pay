@@ -296,6 +296,7 @@ footer{
 }
 #footer-new{
   background: #f3f4f6;
+  overflow: visible;
 }
 #footer-new p{
   font-size: 14px;
@@ -311,7 +312,6 @@ footer{
 }
 #footer-new a span{
   font-size: 12px;
-  overflow: visible;
 }
 #flink{
   font-size: 12px;
