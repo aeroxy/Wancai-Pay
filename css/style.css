@@ -311,6 +311,7 @@ footer{
 }
 #footer-new a span{
   font-size: 12px;
+  overflow: visible;
 }
 #flink{
   font-size: 12px;
@@ -326,4 +327,15 @@ footer{
 }
 .wangcaio2o-honesty{
   height: 35px;
+}
+.wangcaio2o-qr{
+  transition: 0.2s;
+  position: absolute;
+  opacity: 0;
+  transform: translate(-66px,-180px);
+}
+#wechat:hover .wangcaio2o-qr{
+  display: block;
+  opacity: 1;
+  transform: translate(-66px,-200px);
 }
