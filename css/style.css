@@ -3,7 +3,7 @@
   background: #edaa00;
 }
 *{
-  font-family: helvetica;
+  font-family: Sans-Serif;
 }
 body {
   min-width: 1280px;
@@ -91,10 +91,11 @@ body {
   font-weight: 300;
 }
 #intro p{
+  margin-top: 40px;
   font-size: 14px;
 }
 #intro .md-button.md-raised{
-  margin-top: 70px;
+  margin-top: 40px;
   background-color: #edaa00;
   color: white;
   padding-left: 40px;
@@ -104,6 +105,9 @@ body {
 #intro .md-button.md-raised:hover{
   background-color: #edb117;
 }
+/*.md-button.md-raised:not([disabled]){
+  box-shadow: none;
+}*/
 md-content{
   background: white;
   text-align: center;
@@ -127,6 +131,7 @@ md-content{
 }
 md-content h1{
   font-weight: 300;
+  margin-bottom: 10px;
 }
 md-content h1 span{
   color: #edaa00;
@@ -135,6 +140,7 @@ md-content h2{
   font-weight: 300;
   color: #bbb;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 .md-button h1 {
   margin-bottom: 0;
@@ -164,7 +170,7 @@ md-content h2{
 #panel1 md-card p{
   font-size: 14px;
   color: #666;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 8px 10% 0 10%;
 }
 #icon1{
