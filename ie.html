@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html ng-app="YMWC" class="no-js loading">
+  <head>
+    <title>翼码旺财 | 股票代码：833614</title>
+    <meta lang="zh-cmn-Hans" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aero Wang">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="css/angular-material.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="css/module.css"/>
+    <link rel="stylesheet" href="css/wcf_ie.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/angular-messages.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/wcf_ie.js"></script>
+  </head>
+  <body oncontextmenu="return false">
+    <div id="loading">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+    </div>
+    <div id="app">
+      <div id="banner">
+        <div class="md-toolbar-tools new2017">
+          <script type="text/javascript">
+            window._g = window._g || {};
+            $(document).ready(function(){
+              $.ajax({
+                type: "get",
+                async: false,
+                url: 'http://www.wangcaio2o.com/index.php?g=Home&m=Jsonp&a=index',
+                dataType: "jsonp",
+                jsonp: "callback",
+                success: function(data){
+                  if(data.user_name != "" && data.user_name!= null) {
+                    $(".user-center").html("<input type='hidden' name='weixin_check_status' id='weixin_check_status' value='"+data.weixin_check_status+"' /><input type='hidden' name='weixin_status' id='weixin_status' value='"+data.weixin_status+"' /><input type='hidden' name='alipay_check_status' id='alipay_check_status' value='"+data.alipay_check_status+"' /><input type='hidden' name='alipay_status' id='alipay_status' value='"+data.alipay_status+"' /><input type='hidden' name='nationalday_status' id='nationalday' value='"+data.nationalday_status+"' /><input type='hidden' name='client_id' id='client_id' value='"+data.client_id+"' /><input type='hidden' name='info_status' id='info_status' value='"+data.info_status+"' /><input type='hidden' name='info_phone' id='info_phone' value='"+data.info_phone+"' /><input type='hidden' name='account_info' id='account_info' value='"+data.account_info+"' /><div class='usercenter mr20 l'><div class='username' onclick=javascript:window.location.href='http://www.wangcaio2o.com/index.php?g=Home&m=Index&a=index';>欢迎您："+data.user_name+"<i class='usercentermore'></i></div></div><div class='loginout l'><a href='http://www.wangcaio2o.com/index.php?g=Home&m=Logout&a=index'>退出</a></div>");
+                  }
+                  _g.user_info = data;
+                },
+                error:function (data){
+                  alert("出错了");
+                }
+              });
+            });
+          </script>
+          <input name="is_phone" id="is_phone" type="hidden" value="" autocomplete="off">
+          <input id="tg_id" type="hidden" value="" autocomplete="off">
+            <div id="header">
+              <div class="header-container fn">
+                <div class="logo">
+                  <div class="logo-img">
+                    <a title="翼码旺财" class="a-hide" href="index.php"></a>
+                  </div>
+                </div>
+                <div class="user-center">
+                  <div class="loginin l"><a class="login-url" id="topLoginBtn" href="http://www.wangcaio2o.com/index.php?g=Home&amp;m=Login&amp;a=showLogin">商户登录</a>|<a class="login-url" id="topLoginBtn" href="http://t-daili.wangcaio2o.com">代理商登录</a>|<a id="topRegisterBtn" href="http://www.wangcaio2o.com/index.php?g=Home&amp;m=Reg&amp;a=index&amp;tg_id=&amp;from_user_id=9000">注册</a></div>
+                </div>
+                <div class="Indnav r">
+                    <li id="home"><a href="index.php">首页</a></li>
+                    <li class="hover" id="introduce"><a href="http://www.wangcaio2o.com/index.php?m=Introduce&amp;a=index">产品介绍</a></li>
+                    <li id="onlineExper"><a href="http://www.wangcaio2o.com/dlhd.html?id=58468">多乐互动</a></li>
+                    <li id="hall"><a href="http://www.wangcaio2o.com/index.php?g=Hall&amp;m=Index&amp;a=index" target="_blank">卡券商城</a></li>
+                    <li id="oper"><a href="http://www.wangcaio2o.com/index.php?g=Home&amp;m=Help&amp;a=helpConter">帮助中心</a></li>
+                    <li id="contact"><a href="http://www.wangcaio2o.com/index.php?m=Contactus&amp;a=index">关于翼码</a></li>
+                    <li id="help"><a href="http://www.wangcaio2o.com/index.php?g=Home&amp;m=Active&amp;a=index">活动中心</a></li>
+                    <li id="daili"><a href="http://www.wangcaio2o.com/dmsdAgent.html" target="_blank">诚招代理商</a></li>
+                </div>
+                </div>
+            </div>
+          <link href="css/new.css" rel="stylesheet" type="text/css">
+        </div>
+        <div id="intro">
+          <h1>旺财付——便捷支付</h1>
+          <p>旺财付是一款集轻服务、0门槛、强需求、的异业交叉营销收款功能产品，<br>满足您时时监控、分分收款的便利。</p>
+          <md-button class="md-raised" ng-href="http://www.wangcaio2o.com/">立即开通</md-button>
+        </div>
+      </div>
+      <md-content id="fold1">
+        <h1><span>旺财付</span>全心为您</h1>
+        <h2>Wholeheartedly for you</h2>
+        <div id="panel1">
+          <md-card>
+            <figure id="icon1"></figure>
+            <h1>创建便捷</h1>
+            <p>仅需1分钟完成所有配置。只需提供一个收款账户，排除多账户的繁琐</p>
+          </md-card>
+          <md-card>
+            <figure id="icon2"></figure>
+            <h1>活动多样</h1>
+            <p>结合自身营销活动规则，随心配置活动，卡券核销更方便。</p>
+          </md-card>
+          <md-card>
+            <figure id="icon3"></figure>
+            <h1>营销结合</h1>
+            <p>享受“营销+支付”的一站式便捷服务</p>
+          </md-card>
+        </div>
+        <div id="panel2">
+          <figure id="pic1"></figure>
+          <figure id="pic2"></figure>
+          <figure id="pic3"></figure>
+        </div>
+      </md-content>
+      <md-content id="fold2">
+        <h1><span>简单便捷的</span>支付流程</h1>
+        <h2>Simple and convenient payment process</h2>
+        <div id="panel3">
+          <figure id="iphone1" class="phone"></figure>
+          <div class="process"></div>
+          <figure id="iphone2" class="phone"></figure>
+          <div class="process"></div>
+          <figure id="iphone3" class="phone"></figure>
+        </div>
+      </md-content>
+      <md-content id="fold3">
+        <h1><span>适合线下门店商家</span>日常使用</h1>
+        <h2>满足多行业、多样式的收银需求</h2>
+        <figure flex="100" id="lazy"></figure>
+      </md-content>
+      <md-content id="fold4">
+        <h1><span>为您推荐</span></h1>
+        <h2>Recommended for you</h2>
+        <div id="panel4">
+          <md-button ng-href="http://mall.wangcaio2o.com">
+            <figure id="dot1"></figure>
+            <h1>卡券商城</h1>
+            <p>海量卡券资源 轻松异页引流</p>
+          </md-button>
+          <md-button ng-href="http://cp.wangcaio2o.com/dlhd.html">
+            <figure id="dot2"></figure>
+            <h1>多乐互动</h1>
+            <p>便捷移动营销专家</p>
+          </md-button>
+          <md-button ng-href="http://cp.wangcaio2o.com/kqyx.html">
+            <figure id="dot3"></figure>
+            <h1>翼码卡券</h1>
+            <p>卡券营销整体解决专家</p>
+          </md-button>
+          <md-button ng-href="http://cp.wangcaio2o.com/wcxd.html">
+            <figure id="dot4"></figure>
+            <h1>多宝电商</h1>
+            <p>商户的移动电商工具</p>
+          </md-button>
+        </div>
+      </md-content>
+      <div id="footer" style="background: none; padding: 0px;">
+        <div class="ind-footer">
+          <div class="footer-item">
+            <div class="footer-list">
+              <div class="fn">
+                <dl>
+                <dt>联系翼码</dt>
+                <dd>总机号码：021-51970555</dd>
+                  <dd>业务咨询热线：400-882-7770</dd>
+                <dd>公司地址：上海市浦东新区张衡路198弄10号503室</dd>
+                </dl>
+                <dl style="width: 280px;">
+                <dt>关于翼码</dt>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=info&amp;class_id=5">翼码服务</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=arrond&amp;class_id=52">活动专区</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=1">最新动态</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=info&amp;class_id=6">荣誉资质</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=2">媒体报道</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=info&amp;class_id=8">招贤纳士</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Board&amp;a=index">留言板</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=AgentMerchants&amp;a=index&amp;class_id=22">代运营商</a></dd>
+                <dd class="l mr40 w50"><a href="http://test.wangcaio2o.com/index.php?g=Home&amp;m=Contactus&amp;a=slist&amp;class_id=7">翼码人</a></dd>
+                </dl>
+                <dl style="width: 280px;">
+                <dt>加我们关注</dt>
+                <dd class="fn"><i class="footer1-icon"></i><a class="ml5 db l" href="http://weibo.com/imageco">官方微博</a></dd>
+                <dd class="fn rel">
+                  <script>
+                    function publicqrmsgshow(){
+                      $('#public-qrap').fadeOut();
+                      $('#public-qrmsg').fadeIn();
+                    };
+                    </script>
+                    <i class="footer2-icon"></i><a class="ml5 db l" onmousemove="publicqrmsgshow()" href="javascript:void(0)">官方微信</a>
+                    <img id="public-qrmsg" style="top: -60px; right: 40px; position: absolute;" src="img/public-gwgl.png">
+                </dd>
+                <dd class="fn rel">
+                  <script>
+                    function publicqrapshow(){
+                      $('#public-qrmsg').fadeOut();
+                      $('#public-qrap').fadeIn();
+                    };
+                  </script>
+                  <i class="footer2-icon"></i><a class="ml5 db l" onmousemove="publicqrapshow()" href="javascript:void(0)">旺财微信</a>
+                  <img class="dn" id="public-qrap" style="top: -90px; right: 40px; position: absolute;" src="img/public-wcwx.png">
+                </dd>
+                </dl>
+              </div>
+              <div style="margin: 0px auto; width: 400px;"><p><span class="mr10">©2017&nbsp;翼码旺财&nbsp;版权所有 沪ICP备08024760号-14</span><a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120306173228138"><img src="img/gongshang.gif"></a></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;">
+        <script>
+          function onlinecontant(){
+            art.dialog.open('/index.php/Home/Login/userFeedback.html',{id:"userback", title:'我要吐槽',width:600,height:370});
+          }
+          function message_file(){
+            var opt = [
+                ,"uploadUrl=%2Findex.php%2FImgResize%2FMeitulogin%2FuploadFile"
+                ,"cropPresets=800x800"
+                ,"callback=uploadCallback_message"
+                ,"menuType=1"
+            ].join('&');
+            openUploaderMeitu_message("/index.php/ImgResize/Meitulogin/index.html&"+opt);
+          }
+          function countChar(textareaName,spanName){
+           document.getElementById(spanName).innerHTML = "<em>" + (document.getElementById(textareaName).value.length) + "</em>/1000";
+          }
+          function openUploaderMeitu_message(url){
+            var win_width = 700;
+            art.dialog.open(url, {
+              lock: true,
+              title: "上传图片",
+              width: win_width,
+              height: win_width / 1.6,
+              id: 'art_upload2',
+              zIndex:1600
+            });
+          }
+          function uploadCallback_message(data) {
+            $('#message_id').val(data.info.imgName);
+            if(data.info.imgName!=''){
+              $('#uptext').text('重新上传').parent().width(80);
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
